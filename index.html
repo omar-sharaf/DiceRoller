@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dice Roller</h1>
+        
+        <div class="dice-controls">
+            <div class="dice-type-container">
+                <div class="dice-type" data-sides="4">d4</div>
+                <div class="dice-type" data-sides="6">d6</div>
+                <div class="dice-type" data-sides="8">d8</div>
+                <div class="dice-type" data-sides="10">d10</div>
+                <div class="dice-type" data-sides="12">d12</div>
+                <div class="dice-type" data-sides="20">d20</div>
+                <div class="dice-type" data-sides="100">d100</div>
+            </div>
+            
+            <div class="dice-queue-container">
+                <h2>Dice to Roll</h2>
+                <div id="dice-queue"></div>
+                <div class="button-container">
+                    <button id="clear-queue">Clear All</button>
+                    <button id="roll-dice">Roll Dice</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="results-container">
+            <h2>Results</h2>
+            <div id="results-area">
+                <p class="no-results">Your dice results will appear here</p>
+            </div>
+            <div class="total-container">
+                <span>Total: </span><span id="dice-total">0</span>
+            </div>
+            <div class="history-container">
+                <h3>Roll History</h3>
+                <div id="roll-history"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
